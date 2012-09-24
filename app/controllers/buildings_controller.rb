@@ -1,3 +1,5 @@
+require_relative "application_controller"
+
 class BuildingsController < ApplicationController
   def index
     @buildings = Building.all
