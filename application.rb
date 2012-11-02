@@ -31,7 +31,6 @@ Dir["app/**/*.*"].each { |file| require_relative file }
 
 # Custom configurations
 SERVER_URL = "http://50.63.188.39:8080"
-JsonParser = Yajl::Parser.new
 
 # Initialize the app!
 DuNordMap.initialize!
