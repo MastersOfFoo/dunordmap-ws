@@ -5,7 +5,6 @@ require "action_controller/bare"
 require "active_model/model"
 require "active_model_serializers"
 require "rest_client"
-require "yajl"
 
 class DuNordMap < Rails::Application
   routes.append do
