@@ -4,6 +4,8 @@ require "rails/all"
 require "action_controller/bare"
 require "active_model/model"
 require "active_model_serializers"
+require "rest_client"
+require "yajl"
 
 class DuNordMap < Rails::Application
   routes.append do
@@ -27,6 +29,10 @@ end
 
 # Require everything under app dir
 Dir["app/**/*.*"].each { |file| require_relative file }
+
+# Custom configurations
+SERVER_URL = "http://50.63.188.39:8080"
+JsonParser = Yajl::Parser.new
 
 # Initialize the app!
 DuNordMap.initialize!

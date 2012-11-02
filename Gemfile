@@ -6,6 +6,7 @@ gem "railties",     "~> 3.2.8"
 gem "tzinfo"
 
 gem "active_model_serializers"
+gem "rest-client"
 
 # Let's use puma
 gem "puma"
